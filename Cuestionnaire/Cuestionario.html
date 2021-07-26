@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>AV</h1>
+        <h2> Photography Questionnaire</h2>
+    </div>
+    <header>
+        <sub>*All the info collected will be held by us as private and will be used only to assure the best organization
+            of the day in question</sub>
+        <br><br>
+
+    </header>
+    <h3>Please fill in the form in order to provide us with information we will need to help us organize our work and to
+        improve it. Mail it back to us.</h3>
+    <br>
+
+    <!-- IMFORMACION PERSONAL -->
+
+
+    <div>
+        <label>Bride's full name:</label>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Last Name">
+    </div>
+
+    <div>
+        <label>Groom's full name:</label>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Last Name">
+    </div>
+
+    <div>
+        <label>Short name for labeling purpose:</label>
+        <input type="text" placeholder="Bride">
+        <input type="text" placeholder="Groom">
+    </div>
+
+    <div>
+        <label>Contact Info:</label>
+        <input type="tel" placeholder="phone">
+        <input type="email" placeholder="e-mail">
+    </div>
+
+    <div>
+        <label>Where are you from:</label>
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="City">
+    </div>
+
+    <div class="travel_data">
+        <div>
+            <label>Arrival:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>Departure:</label>
+            <input type="date">
+        </div>
+    </div>
+    <div>
+        <label>Wedding Date:</label>
+        <input type="date" value="2021">
+    </div>
+
+    <div>
+        <label>Package you have chosen:</label>
+        <input type="number" min="1" max="13" class="nbr_input">
+    </div>
+    </div>
+
+    <!-- ABOUT THE CEREMONY -->
+
+    <div>
+        <label>Where is the wedding taking place:</label>
+        <input type="text" placeholder="Resort's name">
+    </div>
+
+    <div>
+        <label>Time:</label>
+        <input type="time">
+    </div>
+
+    <div class="list__name">
+        <div><label>Type of ceremony:</label></div>
+        <div>
+            <li><input type="radio" id="legal" value="legal" name="ceremonyTipe">Legal</label></li>
+            <li><label><input type="radio" id="ceremony" value="symbolic" name="ceremonyTipe">Symbolic</label></li>
+        </div>
+    </div>
+
+    <div class="list__name">
+        <div ><label>Place of the ceremony:</label></div>
+        <div>
+            <li><label><input type="radio" name="place" id="beach" value="on the sand">On the sand</label></li>
+            <li><label><input type="radio" name="place" id="gazebo" value="gazebo">Beach gazebo</label></li>
+            <li><label><input type="radio" name="place" id="mainBuilding" value="main building">Somewhere in the main
+                    building</label></li>
+        </div>
+
+    </div>
+
+    <div>
+        <label>Time of Reception:</label>
+        <input type="time">
+
+    </div>
+
+    <div class="list__name">
+        <div ><label>Do you have children of your own:</label></div>
+        <div>
+            <li><input type="radio" name="childrens" id="children_yes" value="true"></input>yes</li>
+            <li><input type="radio" name="childrens" id="children_no" value="false"></input>no</li>
+        </div>
+
+    </div>
+
+    
+    <div id="hidden">
+        <div class="list__name">
+        <div><label>Are they in the wedding party:</label></div>
+        <div>
+            <li><input type="radio" name="childrens" id="children__wp_yes" value="true"></input>yes</li>
+            <li><input type="radio" name="childrens" id="children__wp_no" value="false"></input>yes</li>
+        </div>
+    </div>
+    </div>
+    
+    <div id="hidden">
+    <div id="list__name">
+        <label>Please explain:</label>
+        <textarea name="children" id="children__wp_function" cols="40" rows="1"></textarea>
+    </div>
+    </div>
+    
+    <div>
+        <label>How many in the wedding party:</label>
+        <input type="number" min="0" class="nbr_input">
+    </div>
+
+    <div>
+        <label>If any of the wedding party related to you:</label>
+        <textarea name="relatives" id="relatives" cols="40" rows="1"></textarea>
+    </div>
+
+
+    <div>
+        <label>How many guests:</label>
+        <input type="number" min="0">
+    </div>
+
+    <!-- ESto para javascript -->
+    <div id="hidden">
+        <div class="radio">
+            <div class="list__name"><label>Is there a color theme:<label></label></div>
+            <div>
+                <li><label><input type="radio" id="yes" name="colorTheme" value="true">yes</label></li>
+                <li><label><input type="radio" id="no" name="colorTheme" value="false">no</label></li>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button type="submit" class="btn">Send Form</button>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

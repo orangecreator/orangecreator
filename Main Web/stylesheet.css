@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    ;
+}
+body{
+    background: url(images/bg1.jpg);
+    background-size: cover;
+}
+nav{
+    width: 300px;
+   
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 16px 16px 0px;
+    background: transparent;
+    position: relative;
+    color: black;
+    
+}
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.list__item:hover{
+background: rgba(128, 128, 128, 0.494);
+border-radius: 9px;
+}
+.list__show__hover:hover{
+    background: rgba(240, 255, 240, 0.255);
+    border-radius: 0 9px 9px 0;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+.list__button{
+    display: flex;
+    align-items: left;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+.nav__link{
+    color: #070707;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+  border-radius: 6px;
+  padding-left: 20px;  
+}
+.nav__link--inside:hover{
+background: white ;
+}
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid black;
+    transition: height .4s ;
+    height: 0;
+}
+li{
+    list-style: none;
+}
+
+.follow{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
